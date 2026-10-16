@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | JohnRhey Calagos</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #263859;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #17223b;
+    text-align: center;
+    padding: 14px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+nav a:hover {
+    color: #ffd84d;
+}
+
+section {
+    background-color: white;
+    margin: 22px auto;
+    padding: 24px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    box-shadow: 0 3px 12px rgba(23, 34, 59, 0.06);
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #263859;
+}
+
+.profile-wrap {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+h2 {
+    color: #263859;
+    margin-top: 0;
+}
+
+h3 {
+    color: #435b80;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* PROJECT CARDS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.project-card {
+    border: 1px solid #e1e6ef;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 14px rgba(23, 34, 59, 0.08);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(23, 34, 59, 0.13);
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    background: #e9edf4;
+    padding: 8px;
+}
+
+.project-content {
+    padding: 18px;
+}
+
+.project-content h3 {
+    margin: 0 0 8px;
+}
+
+.project-content p {
+    margin: 8px 0;
+}
+
+.tech-tag {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #e8eef8;
+    color: #263859;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #263859;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 28px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 24px 14px;
+    }
+
+    section {
+        width: calc(100% - 24px);
+        margin: 14px auto;
+        padding: 18px;
+    }
+
+    nav a {
+        margin: 4px 7px;
+        font-size: 0.95rem;
+    }
+
+    .project-card img {
+        height: 190px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Portfolio</h1>
+    <p>Welcome To My Website.</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <div class="profile-wrap">
+        <img src="c:\Users\johnr\OneDrive\Pictures\profile.jpg.jpg"
+             alt="JohnRhey's profile picture"
+             class="profile">
+    </div>
+
+    <h2>Home</h2>
+    <h3>Hello, I'm JohnRhey Calagos</h3>
+    <p>I am a college student who wants to learn more about programming and technology.</p>
+    <p>Welcome to my personal portfolio website!</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>My name is JohnRhey Calagos.</p>
+    <p>Course: ACT 2 C</p>
+    <p>School: Datamex College Of Saint Adeline</p>
+    <p>Hobbies: Playing games, listening to music, and watching movies &amp; Anime.</p>
+    <p>Interests: Computer, programming, and technology.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>Typing</li>
+        <li>Time Management</li>
+        <li>Communication</li>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>Here are some of the programming and web projects I have worked on.</p>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1: PET LIST SYSTEM -->
+        <article class="project-card">
+            <img src="c:\Users\johnr\OneDrive\Pictures\Screenshot 2026-10-16 162742.png"
+                 alt="Pet List System Python screenshot">
+
+            <div class="project-content">
+                <h3>1. Pet List System</h3>
+
+                <p>
+                    A simple program for storing and managing pet
+                    information, including each pet's ID, name,
+                    animal type, age, owner, and breed.
+                </p>
+
+                <span class="tech-tag">Python</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 2: C++ PROJECT -->
+        <article class="project-card">
+            <img src="c:\Users\johnr\OneDrive\Pictures\e92adfcb-32ea-469f-9cb2-3eb91b8de01c.jpg"
+                 alt="Turbo C++ project code screenshot">
+
+            <div class="project-content">
+                <h3>2. C++ Project</h3>
+
+                <p>
+                    A C++ programming project created using the
+                    Turbo C++ environment. The screenshot shows
+                    the program code in the editor.
+                </p>
+
+                <span class="tech-tag">C++</span>
+            </div>
+        </article>
+
+        <!-- PROJECT 3: PORTFOLIO WEBSITE -->
+        <article class="project-card">
+            <img src="c:\Users\johnr\OneDrive\Pictures\Screenshot 2026-10-16 162940.png"
+                 alt="Personal Portfolio Website screenshot">
+
+            <div class="project-content">
+                <h3>3. Personal Portfolio Website</h3>
+
+                <p>
+                    A personal website that introduces me, my
+                    skills, my projects, achievements, future
+                    goals, and contact information.
+                </p>
+
+                <span class="tech-tag">HTML &amp; CSS</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="achievements">
+    <h2>My Achievements</h2>
+    <ul>
+        <li>Completed different school activities.</li>
+        <li>Learned basic programming.</li>
+        <li>Created simple programming projects.</li>
+    </ul>
+</section>
+
+<section id="goals">
+    <h2>My Future Goals</h2>
+    <p>My goal is to finish my studies and become a skilled IT professional.</p>
+    <p>I also want to improve my programming skills.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: Calagosjohnrhey@gmail.com</p>
+    <p>Facebook: My Facebook Profile</p>
+</section>
+
+<footer>
+    <p>&copy; CALAGOS | My Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
